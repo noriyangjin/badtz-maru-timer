@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body class="bg-gray-700 flex items-center justify-center min-h-screen">
+    <div class="relative">
+        <!-- First Timer -->
+        <div class="bg-black text-white rounded-lg p-8 text-center mb-4">
+            <input type="number" id="timerInput1" placeholder="Enter minutes" min="1" class="text-black p-2 mb-2">
+            <div id="timerDisplay1" class="text-4xl font-mono mb-4">00:00</div>
+            <button onclick="startTimer(1)" class="bg-white text-black font-bold py-2 px-4 rounded-full mb-2">start!</button>
+            <button onclick="pauseTimer(1)" class="bg-yellow-400 text-black font-bold py-2 px-4 rounded-full">PAUSE</button>
+            <button onclick="resetTimer(1)" class="bg-red-500 text-white font-bold py-2 px-4 rounded-full mt-2">RESET</button>
+        </div>
+        <!-- Second Timer -->
+        <div class="bg-black text-white rounded-lg p-8 text-center absolute inset-0 m-auto">
+            <input type="number" id="timerInput2" placeholder="Enter minutes" min="1" class="text-black p-2 mb-2">
+            <div id="timerDisplay2" class="text-4xl font-mono mb-4">00:00</div>
+            <button onclick="startTimer(2)" class="bg-white text-black font-bold py-2 px-4 rounded-full mb-2">start!</button>
+            <button onclick="pauseTimer(2)" class="bg-yellow-400 text-black font-bold py-2 px-4 rounded-full">PAUSE</button>
+            <button onclick="resetTimer(2)" class="bg-red-500 text-white font-bold py-2 px-4 rounded-full mt-2">RESET</button>
+        </div>
+        <img alt="Badtz-Maru cartoon character peeking from behind the timer" class="absolute -right-20 top-1/2 transform -translate-y-1/2 z-[-1]" height="150" src="https://www.pngall.com/wp-content/uploads/15/Badtz-Maru-PNG-Background.png" width="150"/>
+    </div>
+
+    <!-- GIF Overlay that will show up when timer finishes -->
+    <div id="gifOverlay" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); z-index: 9999; display: flex; justify-content: center; align-items: center;">
+        <img src="https://media.tenor.com/T5LsfLghUfUAAAAM/druski-kai-cenat.gif" alt="Timer Finished" style="width: 500px; height: auto;">
+    </div>
+</body>
+</html>

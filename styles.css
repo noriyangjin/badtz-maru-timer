@@ -1,0 +1,52 @@
+body {
+    background-color: #4E5456;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.badtz-maru {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 150px; /* Adjust as necessary */
+}
+
+.timer {
+    background-color: black;
+    border-radius: 10px;
+    padding: 50px;
+    color: white;
+    display: inline-block;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.start-button, .pause-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: white;
+    color: black;
+}
+
+.pause-button {
+    background-color: yellow;
+    color: black;
+}
